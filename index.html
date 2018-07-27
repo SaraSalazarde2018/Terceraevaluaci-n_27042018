@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="title" content="Fauna Chilena">
+<meta name="description" content="Estadísticas acerca de la Fauna Chilena">
+<meta name="keywords" content="puma, chile, fauna, puma chileno, fauna chilena">
+<title>Fauna Chilena</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+</style>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300i,900');
+</style>
+<link href="https://fonts.googleapis.com/css?family=Lato:100i,300i,900|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body id="page-top">
+<!--acá está la navegación--> 
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Fauna Chilena</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#primera">Clasificación Tamaño Fauna Chilena</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#segunda">Fauna Por Regiones</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tercera">Especies de Puma</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--acá está el encabezado, que contiene el video-->
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://ak2.picdn.net/shutterstock/videos/5119142/preview/stock-footage-muskoka-cougar.webm">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex text-center h-100">
+      <div class="my-auto w-100 text-white">
+        <h1 class="display-3">Fauna Chilena</h1>
+        <h2>Estadísticas acerca de la Fauna presente en Territorio Nacional</h2>
+      </div>
+    </div>
+  </div>
+</header>
+<aside>
+  <div class="container">
+    <div class="row">
+      <div class="col border-right">
+          <p><i class="fas fa-ruler text-black-50 mr-1"></i> <a class="js-scroll-trigger" href="#primera">Clasificación Tamaño Fauna Chilena</a> <br>La Fauna Silvestre Chilena se caracteriza por estar representada por un numero pequeños de especies exclusivas del país, lo cual indica un alto valor en biodiversidad. Esta visualización muestra los principales animales que son parte de la Fauna Chilena, ordenados alfabeticamente. Los puntos más altos nos muestran las especies de mayor tamaño que existen en la Fauna Nacional, mientras que los puntos más bajos representan los animales más pequeños.<i> Información obtenida de <a href="https://www.gochile.cl/es/flora-fauna/animales-terrestres.htm">GoChile.cl</a> </i>  </p>
+      </div>
+      <div class="col border-right">
+        <p><i class="fas fa-map-marker-alt text-black-50 mr-1"></i> <a class="js-scroll-trigger" href="#segunda">Fauna por Regiones</a><br> El Puma, León de Montaña, o Puma Concolor es un mamífero carnívoro de la familia Felidae nativo de America. El Puma habita en toda América. Su ambiente natural es la selva y áreas rocosas. En Chile, se encuentra a lo largo de toda la Cordillera de los Andes. <i> Información obtenida de <a href="https://www.profesorenlinea.cl/fauna/Puma.htm">Profesorenlinea</a> </i></p>
+      </div>
+      <div class="col">
+        <p><i class="fas fa-chart-pie text-black-50 mr-1"></i> <a class="js-scroll-trigger" href="#tercera">Especies de Puma</a><br>Las tres especies existentes en Chile ocupan altitudinalmente sectores desde el nivel del mar hasta los 5,000 metros sobre el nivel del mar como ocurre en el Parque Nacional El Lauca, en el altiplano nortino.
+
+Latitudinalmente, entretanto, es posible encontrar ejemplares en ambientes tan variados como bosques exóticos de pino radiata, bosques nativos, estepas y zonas alteradas y quemadas con predominio de la quila (Chusquea quila) y el maqui (Aristotelia chilensis). <i> Información obtenida de <a href="https://latercera.cl">La Tercera</a> </i> </p>
+      </div>
+    </div>
+  </div>
+</aside>
+<!--acá se llama a la página que contiene la primera visualización-->
+    
+   
+<section id="primera">
+     <h3> Tamaño Fauna Chilena</h3>
+  <iframe src="viz-primera.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá se llama a la página que contiene la segunda visualización-->
+<section id="segunda">
+  <iframe src="viz-segunda.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá se llama a la página que contiene la tercera visualización-->
+<section id="tercera">
+  <iframe src="viz-tercera.html" scrolling="no" frameborder="0"></iframe>
+</section>
+<!--acá está el pie de página-->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col small">
+<p>Desarrollado con <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="https://startbootstrap.com/snippets/">Code Snippets de Start Bootstrap</a>, <a href="https://fontawesome.com/">Font Awesome</a>, <a href="https://p5js.org/es/">p5.js</a></p>
+<p>Seminario Gráfica Computacional I 2018 | Primer Semestre</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Javascript de Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

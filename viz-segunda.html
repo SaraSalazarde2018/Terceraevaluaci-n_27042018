@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Primera</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+
+      <!--script P5.JS-->
+    
+      <h3>Fauna por regiones</h3>
+ <p>Debido a la longitud de Chile, existe una amplia diversidad de fauna a lo largo de este. A continuación podrás conocer sobre la distinta fauna chilena según la región del país. </p><br>
+      <p>Ingresa el número de la región:</p>
+
+<input id="inputreg" type="text"placeholder="Ejemplo: III o 3">
+<button type="button" onclick="myFunction()">Listo!</button>
+<p id="p01"></p>
+
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("p01");
+    message.innerHTML = "";
+    x = document.getElementById("inputreg").value;
+    try { 
+        if(x == "")  throw "¿Seguro que escribiste el número?";
+        if(x = 1 || "I") throw "La Región de Tarapacá es conocida por sus flamencos altiplánicos, guanacos, llamas, alpacas, vicuñas, vizcachas, zorros, ñandúes, lechuzas, cóndores, lobos marinos, gaviotas nortinas, anchovetas, juereles y albacoras.";
+        if(x = 2 || "II") throw "La Región de Antofagasta es conocida por sus flamencos altiplánicos, guanacos, llamas, alpacas, vicuñas, vizcachas, zorros, lechuzas, cóndores, lagartos, focas, chungungos, pelícanos, gaviotas y variedades de insectos no voladores..";
+        if(x = 3 || "III") throw "La Región de Atacama es conocida por sus pollitos de mar, chinchillas, zorros, culpeos, lobos marinos, chungungos, guanacos, vizcachas, vicuñas, variedades de insectos.";
+        if(x = 4 || "IV") throw "La Región de Coquimbo es conocida por sus águilas chilenas, culpeos, chungungos, lobos de un pelo, chinchillas, lechuzas, lagartos e insectos, gatos salvajes, petreles, guanacos y vicuñasx.";
+         if(x = 5 || "V") throw "La Región de Valparaíso es conocida por su gran abundancia de peces (pejerrey, atún, congrio), pelícanos, gaviotas, golondrinas de mar, jotes, zorzales, culpeos, chillas, gatos salvajes, quiques, tórtolas, ranas chilenas, sapos rulo, peucos, águilas, lagartos de Chile, cóndores, zorros, cernícalos, insectos y arácnidos de todo tipo y tamaño, gran variedad de peces marinos, especies introducidas como conejos, gorriones y ranas sudafricanas.";
+          if(x = 6 || "VI") throw "La Región del Libertador Bernardo O'Higgins es conocida por sus jotes, tiuques, golondrinas, patos, queltehues, chincoles, zorzales, culpeos, chillas, gatos salvajes, tórtolas, ranas chilenas, sapos rulo, peucos, águilas, lagartos de Chile, cóndores, zorros, guanacos, vizcachas, cernícalos, insectos y arácnidos de todo tipo y tamaño, especies introducidas como ratones y conejos..";
+           if(x = 7 || "VII") throw "La Región del Maule es conocida por sus jotes, tiuques, golondrinas, patos, cisnes de cuello negro, loros tricahues, pingüinos, cuervos de pantanos, pequenes, halcones, garzas, diucas, chillas, gatos salvajes, ranas chilenas, lagartos, cóndores, zorros, guanacos, vizcachas, cernícalos, insectos y arácnidos.";
+           if(x = 8 || "VIII") throw "La Región del Biobío es conocida por sus  jotes, tiuques, golondrinas, patos, cisnes de cuello negro, loros tricahues, ballenas, pingüinos, lobos marinos, cormoranes, cuervos de pantanos, pequenes, halcones, garzas, diucas, chillas, gatos salvajes, ranas chilenas, lagartos de bosques, cóndores, zorros, guanacos, vizcachas, cernícalos, insectos y arácnidosx.";
+           if(x = 9 || "IX") throw "La Región de la Araucanía es conocida por su lisa, corvina, congrios, mariscos varios, gaviotas, jotes, tiuques, patos, cisnes, loros tricahues, loros choroy, loros cachañas, chungungos, lobos marinos, coipos, cormoranes, cuervos de pantanos, pequenes, halcones, garzas, chillas, zorros darwin, pudúes, huemules, gatos salvajes, pajaritos chilenos, cisnes de cuello negro, lagartos de bosques, cóndores, insectos coleópteros y arácnidos; introducidos como el ciervo rojo y el ciervo dama.";
+           if(x = 10 || "X") throw "La Región de los Lagos es conocida por su lisa, corvina, congrios, mariscos varios, gaviotas, jotes, tiuques, patos, cisnes, loros tricahues, loros choroy, loros cachañas, chungungos, lobos marinos, coipos, cormoranes, cuervos de pantanos, pequenes, halcones, garzas, diucas, chillas, gatos salvajes, sapitos Darwin, lagartos de bosques, cóndores, zorros, guanacos, vizcachas, cernícalos, insectos coleópteros y arácnidos.";
+           if(x = 11 || "XI") throw "La Región de Aisén del General Carlos Ibáñez del Campo es conocida por su lisa, corvina, congrios, mariscos varios, gaviotas, jotes, tiuques, patos, cisnes, loros tricahues, loros choroy, loros cachañas, chungungos, lobos marinos, huillines, cormoranes, zorzales, pequenes, garzas, chillas, zorros, pudúes, huemules, gatos salvajes, pajaritos chilenos, cisnes de cuello negro, bandurrias, chunchos, lagartos de bosques, cóndores, insectos.";
+           if(x = 12 || "XII") throw "La Región de Magallanes y de la Antártica Chilena es conocida por sus centollas, krill antártico, pingüinos en la antártica y en la costa americana, pilpilenes, ballenas azules de todo el mar austral antártico y sudamenricano, gaviotas, jotes, tiuques, patos, cisnes, loros, chungungos, lobos marinos, cormoranes, garzas, chillas, zorros, pudúes, huemules, chillas, guanacos, pajaritos chilenos, cisnes de cuello negro, bandurrias, chunchos, lagartos de bosques, cóndores, insectos, roedores pequeños.";
+           if(x = 13 || "VII") throw "La Región Metropolitana de Santiago es conocida por sus jotes, tiuques, pequenes, queltehues, chincoles, zorzales, culpeos, chillas, gatos salvajes, quiques, tórtolas, ranas chilenas, sapos rulo, peucos, águilas, lagartos de Chile, cóndores, zorros, cernícalos, insectos y arácnidos de todo tipo y tamaño, especies introducidas como conejos, gorriones.";
+           if(x = 14 || "VII") throw "La Región de los Ríos es conocida por su ganado, siendo una región con muchas exportaciones agropecuarias, siendo las vacas y los chanchos las principales fuentes.";
+           if(x = 15 || "VII") throw "La Región de Arica y Parinacota es conocida por su  ratón orejudo, el piuchen, el guanaco, la vicuña, el flamenco, el cóndor.";
+        if(x < 1)    throw "Esa no es una región, mejor revisa un mapa.";
+        if(x > 16)   throw "Esa no es una región, mejor revisa un mapa.";
+        else   throw "Esa no es una región, mejor revisa un mapa.";
+    }
+    catch(err) {
+        message.innerHTML = "" + err;
+    }
+      }
+      </script>
+
+</body>
+</html>

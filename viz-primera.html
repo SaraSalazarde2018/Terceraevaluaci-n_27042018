@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<title>Primera</title>
+</head>
+<body>
+<!--Nada más que p5.js para dibujar en el body de esta página-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+var data;
+var n;
+function preload() {
+  data = loadTable('https://raw.githubusercontent.com/samanthasayado/Evaluacion_27072018/gh-pages/data.csv','csv', 'header');
+}
+function setup() {
+  console.log(data);
+  console.log(data.getRowCount() + ' son las filas en la tabla');
+  console.log(data.getColumnCount() + ' son las columnas en la tabla');
+  var canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index','-1');
+  noStroke();
+  fill(43, 87,107);
+  textAlign(CENTER);
+  textStyle(BOLD);  
+  beginShape();
+  vertex(0,height)
+    for (var a = 0; a < data.getRowCount(); a++) {
+    var size = data.get(a, 2);
+    var posX = (windowWidth/(data.getRowCount()+1))*(a+1);
+    var posY = map(size, 0, 500, (windowHeight-50), 100);
+    vertex(posX,posY);
+      var animal = data.get(a, 0);
+      textSize(11);
+      text(animal + '\n•',posX,posY-10);
+  }
+  vertex(width,height);
+  endShape(CLOSE);
+}
+</script>
+</body>
+</html>
